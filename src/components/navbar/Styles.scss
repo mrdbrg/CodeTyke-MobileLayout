@@ -18,6 +18,7 @@
 
 #navbarContent{ 
   @include sm {
+    // Center the logo in the navbar
     text-align: center;
   }
 }
