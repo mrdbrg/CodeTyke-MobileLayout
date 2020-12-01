@@ -17,6 +17,10 @@
     &__subHeader{
         @include subheader;
         min-height: 42px;
+        // Don't display the subheader on each question. (We'll hide it for now and find a better solution in a subsequent assignment.)
+        @include sm {
+            display: none;
+        }
     }
   
     &__answerArea {
@@ -28,6 +32,11 @@
         justify-content: center;
         @media only screen and (max-width: $tablet) {
             border-radius: unset;
+        }
+        @include sm {
+            // White container for the answers is removed.
+            background-color: transparent;
+            box-shadow: none;
         }
 
     }

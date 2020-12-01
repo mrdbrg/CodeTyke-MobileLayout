@@ -47,7 +47,7 @@ const LearningModule = ({setGameStatus}) => {
             <div className="learningModule__title">
               { currentQuestion.title }
             </div>
-            <div className="learningModule__subHeader">
+            <div className="learningModule__subHeader" style={{border: "2px solid red"}}>
               { currentQuestion.additionalInfo }
             </div>
           </div>
