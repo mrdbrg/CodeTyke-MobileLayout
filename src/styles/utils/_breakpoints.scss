@@ -1,16 +1,2 @@
 $tablet : 768px;
 $mobile : 420px;
-
-// Small devices
-@mixin sm {
-  @media (max-width: #{$mobile}) {
-    @content;
-  }
-}
-
-// Medium devices
-@mixin md {
-  @media (max-width: $tablet) {
-    @content;
-  }
-}

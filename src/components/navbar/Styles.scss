@@ -17,8 +17,8 @@
 }
 
 #navbarContent{ 
-  @include sm {
-    // Center the logo in the navbar
+  // Center the logo in the navbar
+  @media only screen and (max-width: $mobile) {
     text-align: center;
   }
 }

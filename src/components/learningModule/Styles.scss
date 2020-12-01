@@ -12,8 +12,8 @@
         color: $morning-sky;
         font-weight: 600;
         font-size: 1.5em;
-        @include sm {
-            // Align the title to the left.
+        // Align the title to the left.
+        @media only screen and (max-width: $mobile) {
             text-align: left;
         }
     }
@@ -21,8 +21,8 @@
     &__subHeader{
         @include subheader;
         min-height: 42px;
-        @include sm {
-            // Don't display the subheader on each question. (We'll hide it for now and find a better solution in a subsequent assignment.)
+        // Don't display the subheader on each question. (We'll hide it for now and find a better solution in a subsequent assignment.)
+        @media only screen and (max-width: $mobile) {
             display: none;
         }
     }
@@ -37,8 +37,8 @@
         @media only screen and (max-width: $tablet) {
             border-radius: unset;
         }
-        @include sm {
-            // White container for the answers is removed.
+        // White container for the answers is removed.
+        @media only screen and (max-width: $mobile) {
             background-color: transparent;
             box-shadow: none;
         }
@@ -49,8 +49,8 @@
         display: grid;
         grid-auto-flow: column;
         grid-gap: 10px;
-        @include md {
-            // Answers are arranged in a grid of 2x2 elements.
+        // Answers are arranged in a grid of 2x2 elements.
+        @media only screen and (max-width: $tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 50%);
         }
@@ -58,15 +58,11 @@
 
     &__submitButtonContainer {
         height: 50px;
-        // @include sm { 
-        //     width: 285px;
-        // }
         .submitButton {
             float: right;
-            @include sm {
-                // Button for answer submission is full-width.
+            // Button for answer submission is full-width.
+            @media only screen and (max-width: $mobile) {
                 width: 78%;
-                // width: 100%; // alternative solution
             }
         }
 
