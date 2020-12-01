@@ -58,11 +58,15 @@
 
     &__submitButtonContainer {
         height: 50px;
+        // @include sm { 
+        //     width: 285px;
+        // }
         .submitButton {
             float: right;
             @include sm {
                 // Button for answer submission is full-width.
-                width: 100%;
+                width: 78%;
+                // width: 100%; // alternative solution
             }
         }
 
