@@ -17,8 +17,8 @@
     &__subHeader{
         @include subheader;
         min-height: 42px;
-        // Don't display the subheader on each question. (We'll hide it for now and find a better solution in a subsequent assignment.)
         @include sm {
+            // Don't display the subheader on each question. (We'll hide it for now and find a better solution in a subsequent assignment.)
             display: none;
         }
     }
@@ -52,6 +52,11 @@
         height: 50px;
         .submitButton {
             float: right;
+            @include sm {
+                // Button for answer submission is full-width.
+                width: 100%;
+            }
         }
+
     }
 }
