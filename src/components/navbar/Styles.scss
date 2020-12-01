@@ -1,3 +1,5 @@
+@import '../../styles/utils/breakpoints';
+
 #navbarContainer{
   height: 50px;
   background: black;
@@ -11,6 +13,12 @@
 @media (max-width: 500px) {
   #navbarContainer{
     margin-bottom: 15px;
+  }
+}
+
+#navbarContent{ 
+  @include sm {
+    text-align: center;
   }
 }
 
