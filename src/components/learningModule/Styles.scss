@@ -42,7 +42,6 @@
             background-color: transparent;
             box-shadow: none;
         }
-
     }
 
     &__selections{ 
@@ -50,6 +49,11 @@
         display: grid;
         grid-auto-flow: column;
         grid-gap: 10px;
+        @include md {
+            // Answers are arranged in a grid of 2x2 elements.
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 50%);
+        }
     }
 
     &__submitButtonContainer {
