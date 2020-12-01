@@ -14,10 +14,3 @@ $mobile : 420px;
     @content;
   }
 }
-
-@mixin subheader {
-  // 420px window width and less
-  @include sm {
-    display: none;
-  }
-}
